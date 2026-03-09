@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="b1.js"></script>
+    <style>
+        h1 {
+            border: 3px solid red;
+            color: aqua;
+        }
+    </style>
 </head>
+
 <body>
     <h1>hello</h1>
 </body>
+
 </html>
+
+<script>
+    const test = document.getElementsByTagName('h1');
+    test[0].onclick = function () {
+        alert("누름");
+    }
+</script>
